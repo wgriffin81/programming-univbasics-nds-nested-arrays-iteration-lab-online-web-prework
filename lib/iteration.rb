@@ -9,8 +9,8 @@ def join_ingredients(src)
   
   i = 0
   while i < src.length do
-    inner = src[i]
-    result << "I love #{inner[0]} and #{inner[1]} on my pizza"
+    element = src[i]
+    result << "I love #{element[0]} and #{element[1]} on my pizza"
     i += 1
   end
 
