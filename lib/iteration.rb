@@ -7,15 +7,15 @@ def join_ingredients(src)
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
   
-  num = 0 
-  while num < all_options.count do
-     choosen_array = []
-    element1 = choosen_array[0]
-    element1 = choosen_array[1]
-    element1 << all_options[num][num] 
-    element1 << all_options[num][num + 1]
-    num += 1 
+  i = 0
+  while i < src.length do
+    inner = src[i]
+    result << "I love #{inner[0]} and #{inner[1]} on my pizza"
+    i += 1
   end
+
+  result
+end
     
   
   
