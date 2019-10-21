@@ -30,7 +30,10 @@ def find_greater_pair(src)
   i = 0
   while i < src.length do
     element = src[i]
-    if 
+    if element[0] > element[1]
+      result << element[0]
+    else
+      result << element[1]
     i += 1
   end
 
